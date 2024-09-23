@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --Texte: #FAFAFA;
+    --Gris: #505050;
+    --primary-foreground: #18181B;
+    --background: #09090B;
+    --accent: #27272A;
+    --border: #27272A;
+    --: #;
+}
+
+body {
+    background-image: url(/public/fond.png);
+    background-repeat: repeat-y;
+    background-color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.nav-bouton {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: var(--background);
+    border-radius: 4px;
+    border: var(--Gris) 1px solid;
+    flex-direction: column;
+}
+
+.icon-navbar {
+    padding: 5px;
+    background-color: var(--primary-foreground);
+    border-radius: 4px;
+    border: var(--Gris) 1px solid;
+}
+
+
+section {
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.web-pos {
+    width: 844px;
+}
+
+.card-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--Texte);
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--Gris);
+}
+
+.statue {
+    display: flex;
+    gap: 10px;
+}
+
+.statue p {
+    color: #C92626;
+
+}
+
+.leds {
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+
+.led-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #C92626;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: blink 1s infinite;
+}
+
+.led-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(201, 38, 38, 0.5);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+/* Animation pour le clignotement */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.list-reseaux {
+    display: flex;
+    gap: 20px;
+}
+
+.titre-categ {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.titre-categ h3 {
+    color: var(--Gris);
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.titre-categ hr {
+    flex: 1;
+    height: 2px;
+    background-color: var(--Gris);
+    margin-left: 20px;
+    border: 0px;
+    border-radius: 2px;
+}
+
+.text-presentation {
+    color: var(--Texte);
+    font-weight: 400;
+}
+
+.card-projet {
+    display: flex;
+    border: 1px solid var(--accent);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.info-projet {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-projet H4 {
+    color: var(--Texte);
+}
+
+.info-projet p {
+    color: var(--Gris);
+}
+
+.link-projet {
+    display: flex;
+}
+
+.link-icons {
+    padding: 3px;
+    background-color: var(--accent);
+    border-radius: 4px;
+}
+
+.soon-icons {
+    padding: 3px;
+    color: var(--Texte);
+    background-color: var(--accent);
+    border-radius: 4px;
+}
+
+.all-projet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-projet {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.button-projet p {
+    display: flex;
+    color: var(--Gris);
+    font-weight: 600;
+    padding: 4px 100px;
+    background-color: var(--border);
+    border-radius: 4px;
+    justify-content: center;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer hr {
+    height: 2px;
+    background-color: var(--Gris);
+    width: 844px;
+    border: 0px;
+    border-radius: 2px;
+}
+
+footer p {
+    padding: 10px 0;
+    color: var(--Texte);
+    display: flex;
+    justify-content: center;
+}
