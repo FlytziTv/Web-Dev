@@ -81,6 +81,13 @@ h4 {
     color: var(--Gris);
 }
 
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Texte);
+}
+
+
 .statue {
     display: flex;
     gap: 10px;
@@ -88,7 +95,6 @@ h4 {
 
 .statue p {
     color: #C92626;
-
 }
 
 .leds {
@@ -250,4 +256,24 @@ footer p {
     color: var(--Texte);
     display: flex;
     justify-content: center;
+}
+
+.stud {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-stud {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-stud h4 {
+    color: var(--Texte);
+}
+
+.card-stud p {
+    color: var(--Gris);
+    font-size: 16px;
 }
