@@ -193,6 +193,13 @@ h4 {
     border-radius: 4px;
 }
 
+.link-projet img {
+    display: flex;
+    align-items: center;
+}
+
+
+
 .soon-icons {
     padding: 3px;
     color: var(--Texte);
