@@ -258,22 +258,62 @@ footer p {
     justify-content: center;
 }
 
-.stud {
+.group-exp {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.card-stud {
+.card-exp {
     display: flex;
     flex-direction: column;
 }
 
-.card-stud h4 {
+.card-exp h4 {
     color: var(--Texte);
 }
 
-.card-stud p {
+.card-exp p {
     color: var(--Gris);
     font-size: 16px;
+}
+
+.experience {
+    display: flex;
+}
+
+.experience hr {
+    height: auto;
+    width: 2px;
+    background-color: var(--Gris);
+    margin-left: 20px;
+    border: 0px;
+    border-radius: 2px;
+    margin: 0 20px 0 130px;
+}
+
+.group-language {
+    display: flex;
+    flex-wrap: wrap; /* Permet de créer une nouvelle ligne */
+    gap: 11px;
+    width: 844px;
+}
+
+.card-language {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: calc((89.579% / 3) - 0px); /* Ajuste la largeur pour tenir 3 cartes par ligne */
+    border-radius: 4px;
+    border: 1px solid var(--accent);
+}
+
+.card-language img {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--accent);
+}
+
+.card-language h5 {
+    padding-left: 15px;
 }
