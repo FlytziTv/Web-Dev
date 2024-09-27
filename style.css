@@ -18,7 +18,7 @@
 }
 
 body {
-    background-image: url(/public/fond.png);
+    background-image: url(public/fond.png);
     background-repeat: repeat-y;
     background-color: var(--background);
 }
