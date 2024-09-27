@@ -169,6 +169,7 @@ h5 {
 
 .card-projet {
     display: flex;
+    border-radius: 4px;
     border: 1px solid var(--accent);
     align-items: center;
     justify-content: space-between;
